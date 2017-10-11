@@ -2,7 +2,10 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 
 	<!-- Basic Page Needs
@@ -34,6 +37,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
+
 <body>
 
 
@@ -51,13 +55,19 @@
 		</div>
 		<div class="one-third column">
 			<h3>Who?</h3>
-			<p style="line-height:2em;">Detail-oriented. <br /><span style="text-decoration:line-through">Washingtonian.</span> Denverite. <br />Tech enthusiast. </p>
+			<p style="line-height:2em;">Detail-oriented.
+				<br />
+				<span style="text-decoration:line-through">Washingtonian.</span> Denverite.
+				<br />Tech enthusiast. </p>
 		</div>
 		<div class="one-third column">
 			<h3>What?</h3>
 			<p>Web Development and Design</p>
 			<ul class="square">
-				<li><strong>JavaScript:<br /></strong>ES2015, React, Backbone, jQuery, Dojo</li>
+				<li>
+					<strong>JavaScript:
+						<br />
+					</strong>ES2015, React, Backbone, jQuery, Dojo</li>
 				<li>HTML5</li>
 				<li>CSS3</li>
 				<li>UI/UX</li>
@@ -68,14 +78,44 @@
 			<span style="text-decoration:line-through">Washington, DC</span>
 			<p>Denver, CO</p>
 			<div class="map-container">
-				<iframe style="width:100%; height:100%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://arcgis.com/home/webmap/embedViewer.html?webmap=6d1331747ba7412b8ce931d78b9b07b0"></iframe>
+				<style>
+					.embed-container {
+						position: relative;
+						padding-bottom: 80%;
+						height: 0;
+						max-width: 100%;
+					}
+
+					.embed-container iframe,
+					.embed-container object,
+					.embed-container iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+
+					small {
+						position: absolute;
+						z-index: 40;
+						bottom: 0;
+						margin-bottom: -15px;
+					}
+				</style>
+				<div class="embed-container">
+					<iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Josh's Home"
+					 src="//www.arcgis.com/apps/Embed/index.html?webmap=bd96cb1ab99846f98d35c92ee7683ea1&amp;extent=-105.003,39.7304,-104.981,39.7496&amp;zoom=false&amp;previewImage=false&amp;scale=false&amp;disable_scroll=true&amp;theme=light"></iframe>
+				</div>
 			</div>
 		</div>
 
-	</div><!-- container -->
+	</div>
+	<!-- container -->
 
 
-<!-- End Document
+	<!-- End Document
 ================================================== -->
 </body>
+
 </html>
